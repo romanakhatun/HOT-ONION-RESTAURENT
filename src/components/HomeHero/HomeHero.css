@@ -1,0 +1,27 @@
+.homeHero{
+    background: url('../../img/bannerbackground.png') no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 104%;
+    background-position: right; 
+    text-align: center; 
+}
+.heroSearch{
+    margin-top: 200px;
+    position: relative;
+    display: inline-block;
+}
+.heroSearch .searchInput{
+    padding:11px 100px ;
+    border-radius: 30px;
+    border: none;
+}
+.heroSearch .submit{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 0;
+    background: orange;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+}

@@ -1,0 +1,14 @@
+const lunch = [
+    { cat: "lunch", title: "Roasted Garlic Macaroni and Cheese", price: 10.99, shortDisc: "Things aren't going well at all with mom", longDisc: "Things aren't going well at all with mom today. She is just a limp noodle and wants to sleep all the time. I sure hope that things get better soon. Things aren't going well at all with mom today. She is just a limp noodle and wants to sleep all the time. I sure hope that things get better soon", img: "./img/lunch/lunch1.png" },
+
+    { cat: "lunch", title: "Low Carb Peanut Butter Swirl", price: 9.99, shortDisc: "Her mom had warned her.", longDisc: "Her mom had warned her. She had been warned time and again, but she had refused to believe her. She had done everything right and she knew she would be rewarded for doing so with the promotion. So when the promotion was given to her main rival, it not only stung, it threw her belief system into disarray. It was her first big lesson in life, but not the last", img: "./img/lunch/lunch2.png" },
+
+    { cat: "lunch", title: "Healthy Chicken Burgers with Spinach", price: 8.99, shortDisc: "What were they eating? It didn't taste", longDisc: "What were they eating? It didn't taste like anything she had ever eaten before and although she was famished, she didn't dare ask. She knew the answer would be one she didn't want to hear", img: "./img/lunch/lunch3.png" },
+
+    { cat: "lunch", title: "Tofu Kabobs with Cherry Barbecue", price: 6.99, shortDisc: "Sleeping in his car was never the plan", longDisc: "Sleeping in his car was never the plan but sometimes things don't work out as planned. This had been his life for the last three months and he was just beginning to get used to it. He didn't actually enjoy it, but he had accepted it and come to terms with it. Or at least he thought he had. All that changed when he put the key into the ignition, turned it and the engine didn't make a sound", img: "./img/lunch/lunch4.png" },
+
+    { cat: "lunch", title: "Beef Steak", price: 11.99, shortDisc: "It was difficult to explain to", longDisc: "It was difficult to explain to them how the diagnosis of certain death had actually given him life. While everyone around him was in tears and upset, he actually felt more at ease. The doctor said it would be less than a year. That gave him a year to live, something he'd failed to do with his daily drudgery of a routine that had passed as life until then", img: "./img/lunch/lunch5.png" },
+
+    { cat: "lunch", title: "Healthy meal plan", price: 6.99, shortDisc: "There once lived an old man", longDisc: "There once lived an old man and an old woman who were peasants and had to work hard to earn their daily bread. The old man used to go to fix fences and do other odd jobs for the farmers around, and while he was gone the old woman, his wife, did the work of the house and worked in their own little plot of land.", img: "./img/lunch/lunch6.png" }
+]
+export default lunch;
