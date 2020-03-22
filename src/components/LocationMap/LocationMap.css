@@ -1,0 +1,6 @@
+.lacationContainer{
+    display: flex;
+}
+.deliveryImg img{
+    width: 20%;
+}

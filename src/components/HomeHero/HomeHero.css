@@ -11,17 +11,28 @@
     position: relative;
     display: inline-block;
 }
+.heroSearch p{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+}
 .heroSearch .searchInput{
-    padding:11px 100px ;
     border-radius: 30px;
     border: none;
+    font-size: 15px;
+    width: 330px;
+    height: 40px;
+    padding-left: 38px;
 }
 .heroSearch .submit{
-    padding: 10px 30px;
+    padding: 11px 37px;
     border-radius: 30px;
     border: 0;
-    background: orange;
-    font-size: 18px;
+    background-color: #f91944;
     position: absolute;
-    right: 0;
+    right: 91px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
 }

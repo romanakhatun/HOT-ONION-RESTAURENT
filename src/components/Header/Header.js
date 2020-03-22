@@ -1,5 +1,5 @@
 import React from 'react';
-import logo2 from './logo/logo2.png';
+import logo2 from '../../img/logo/logo2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,6 +10,7 @@ const Header = () => {
                 <a href="/" className="headerLogo">
                     <img src={logo2} alt="" />
                 </a>
+
                 <div className="headerNav">
                     <FontAwesomeIcon icon={faShoppingCart} />
                     <button className="btn btnLight">Login</button>
