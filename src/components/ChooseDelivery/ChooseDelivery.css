@@ -18,10 +18,6 @@
     transition: all .3s ease;
 }
 
-.deliveryCart img{
-    padding: 5px 10px;
-}
-
 .deleveryIcon img{
     width: 40px;
 }
@@ -41,9 +37,9 @@
 .deleveryContent svg{
     margin-left: 10px;
     color: #ffff;
-    background-color: rgb(93, 194, 75);
     padding: 8px 9px;
     border-radius: 50%;
+    background-color: rgb(93, 194, 75);
 }
 
 .rightIcon{
