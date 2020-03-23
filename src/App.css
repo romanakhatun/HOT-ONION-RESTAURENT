@@ -17,14 +17,20 @@ img{
 .btn{
   border: none;
   background-color: transparent;
-  padding: 12px 35px;
+  padding: 10px 30px;
   font-size: 18px;
   border-radius: 100px;
   cursor: pointer;
+  text-decoration: none;
+  color: #333;
 }
 .btnFull{
   color: #fff;
   background-color: var(--colorPrimary);
+}
+.btnMuted{
+  color: #fff;
+  background-color: #ddd;
 }
 
 /* Header */
@@ -51,6 +57,40 @@ img{
 }
 .headerNav > *{
   margin: 0 10px;
+}
+
+.userInfo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.userInfo img{
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
+}
+/* From */
+form{
+  width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+form input, form textarea{
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+form .input{
+  background-color: #fff;
+  border: none;
+}
+.formText{
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 

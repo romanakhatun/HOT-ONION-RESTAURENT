@@ -10,7 +10,7 @@ const FoodCorner = () => {
             <div className="foodMenu">
                 <ul>
                     <li>
-                        <NavLink exact to="/breackfast">Breackfast</NavLink>
+                        <NavLink exact to="/breakfast">Breackfast</NavLink>
                     </li>
                     <li>
                         <NavLink exact activeClassName='active' to="/">Lunch</NavLink>

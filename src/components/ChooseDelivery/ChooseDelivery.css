@@ -19,17 +19,35 @@
 }
 
 .deliveryCart img{
-    width: 100%;
-    padding-bottom: 10px;
+    padding: 5px 10px;
 }
 
 .deleveryIcon img{
-    width: 175%;
-    height: 29%;
+    width: 40px;
 }
 
 .deleveryContent, .deleveryIcon{
     padding: 10px;
+}
+.deleveryContent p{
+    padding: 10px 0;
+}
+.deleveryContent a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.deleveryContent svg{
+    margin-left: 10px;
+    color: #ffff;
+    background-color: rgb(93, 194, 75);
+    padding: 8px 9px;
+    border-radius: 50%;
+}
+
+.rightIcon{
+    color:#ffff;
 }
 
 .deliveryCart:hover{

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 :root {
     --colorPrimary: #f91944;
 }
@@ -5,6 +6,7 @@
   .foodCorner{
     background-color: #fff;
     padding: 60px 0;
+    text-align: center;
 }
 
 /* Food Menu */
@@ -69,6 +71,9 @@
 .foodItem .foodTitle{
     font-size: 18px;
     margin: 15px 0;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
 }
 .foodItem .foodShortDisc{
     color: #555;

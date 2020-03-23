@@ -1,40 +1,101 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import FoodCorner from './components/FoodCorner/FoodCorner';
-import Lunch from './components/Foods/Lunch';
-import Breakfast from './components/Foods/Breakfast';
-import Dinner from './components/Foods/Dinner';
-import ChooseDelivery from './components/ChooseDelivery/ChooseDelivery';
+import { AuthContextProvider, PrivateRoute } from './components/SignUpIn/useAuth';
+
 import Header from './components/Header/Header';
 import HomeHero from './components/HomeHero/HomeHero';
+
+import FoodCorner from './components/FoodCorner/FoodCorner';
+import Lunch from './components/Foods/Lunch';
+import Dinner from './components/Foods/Dinner';
+import Breakfast from './components/Foods/Breakfast';
+import FoodDetails from './components/FoodCorner/FoodDetails';
+
+import Cart from './components/Cart/Cart';
+import Login from './components/SignUpIn/Login';
+import Notfound from './components/Notfound/Notfound';
+import CheckoutBtn from './components/FoodCorner/CheckoutBtn';
 import LocationMap from './components/LocationMap/LocationMap';
+import ChooseDelivery from './components/ChooseDelivery/ChooseDelivery';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <AuthContextProvider value="Romana">
         <Header />
-        <HomeHero />
 
-        <FoodCorner />
-        <div className="foodCorner">
+        <Router>
           <Switch>
-            <Route exact path="/" component={Lunch} />
-            <Route exact path="/breackfast" component={Breakfast} />
-            <Route exact path="/dinner" component={Dinner} />
-          </Switch>
-        </div>
+            <Route exact path="/">
+              <HomeHero></HomeHero>
+              <FoodCorner></FoodCorner>
+            </Route>
 
-        <ChooseDelivery />
-        <LocationMap />
-      </Router>
+            <Route exact path="/breakfast">
+              <HomeHero></HomeHero>
+              <FoodCorner></FoodCorner>
+            </Route>
+
+            <Route exact path="/dinner">
+              <HomeHero></HomeHero>
+              <FoodCorner></FoodCorner>
+            </Route>
+
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+
+            <Route path="/cart">
+              <Cart></Cart>
+            </Route>
+
+            <PrivateRoute path="/checkout">
+              <LocationMap></LocationMap>
+            </PrivateRoute>
+
+            <Route path="/food/:foodKey">
+              <FoodDetails />
+            </Route>
+
+            <Route path="*">
+              <Notfound></Notfound>
+            </Route>
+          </Switch>
+
+          <div className="foodCorner">
+            <Switch>
+              <Route exact path="/" component={Lunch} />
+              <Route exact path="/breakfast" component={Breakfast} />
+              <Route exact path="/dinner" component={Dinner} />
+            </Switch>
+          </div>
+
+          <Switch>
+            <Route exact path="/">
+              <CheckoutBtn></CheckoutBtn>
+              <ChooseDelivery></ChooseDelivery>
+              <Footer></Footer>
+            </Route>
+
+            <Route exact path="/breakfast">
+              <CheckoutBtn></CheckoutBtn>
+              <ChooseDelivery></ChooseDelivery>
+              <Footer></Footer>
+            </Route>
+
+            <Route exact path="/dinner">
+              <CheckoutBtn></CheckoutBtn>
+              <ChooseDelivery></ChooseDelivery>
+              <Footer></Footer>
+            </Route>
+          </Switch>
+
+        </Router>
+      </AuthContextProvider>
     </div >
   );
 }
 
 export default App;
-
-
-
-

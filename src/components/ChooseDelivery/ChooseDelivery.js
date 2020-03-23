@@ -5,9 +5,9 @@ import HomeDelevery from '../../img/Image/HomeDelevery.png';
 import DeleveryIcon1 from '../../img/icons/DeleveryIcon1.png';
 import DeleveryIcon2 from '../../img/icons/DeleveryIcon2.png';
 import DeleveryIcon3 from '../../img/icons/DeleveryIcon3.png';
-import './ChooseDelivery.css'
-
-
+import './ChooseDelivery.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const ChooseDelivery = () => {
     return (
@@ -28,7 +28,7 @@ const ChooseDelivery = () => {
                         <div className="deleveryContent">
                             <h3>Fast Delevery</h3>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-                            <a href="/">See more</a>
+                            <a href="/">See more <FontAwesomeIcon icon={faArrowRight} /> </a>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ const ChooseDelivery = () => {
                         <div className="deleveryContent">
                             <h3>A Good Auto Responder</h3>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-                            <a href="/">See more</a>
+                            <a href="/">See more <FontAwesomeIcon icon={faArrowRight} /></a>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const ChooseDelivery = () => {
                         <div className="deleveryContent">
                             <h3>Home Delevery</h3>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
-                            <a href="/">See more</a>
+                            <a href="/">See more <span><FontAwesomeIcon icon={faArrowRight} /></span></a>
                         </div>
                     </div>
                 </div>
