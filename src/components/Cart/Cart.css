@@ -1,4 +1,4 @@
-.cartPage{
+ .cartPage{
     background-color: #fff;
     max-width: 1140px;
     padding: 0 15px;
@@ -47,10 +47,10 @@
     margin: 10px 0;
 }
 .cartItem{
-    background-color: #f4f4f4;
-    padding: 10px;
+    background-color: #f5f5f5;
+    padding: 20px 10px;
     margin: 10px 0;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     position: relative;
