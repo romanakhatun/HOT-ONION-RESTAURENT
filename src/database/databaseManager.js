@@ -1,10 +1,10 @@
 const getUser = () => {
-    const existingUser = sessionStorage.getItem('userId');
+    const existingUser = localStorage.getItem('userId');
     if (existingUser) {
         return existingUser;
     } else {
         const newUser = 'user-' + new Date().getTime();
-        sessionStorage.setItem('userId', newUser)
+        localStorage.setItem('userId', newUser)
         return newUser;
     }
 }
@@ -56,19 +56,4 @@ const localStorage = window.localStorage || (() => {
         }
     };
 })()
-
-const sessionStorage = window.sessionStorage || (() => {
-    let store = {}
-    return {
-        getItem(key) {
-            return store[key]
-        },
-        setItem(key, value) {
-            store[key] = value.toString()
-        },
-        clear() {
-            store = {}
-        }
-    };
-})()
-  // end of poly fill
+// end of poly fill

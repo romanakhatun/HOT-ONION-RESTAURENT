@@ -19,6 +19,7 @@ import CheckoutBtn from './components/FoodCorner/CheckoutBtn';
 import LocationMap from './components/LocationMap/LocationMap';
 import ChooseDelivery from './components/ChooseDelivery/ChooseDelivery';
 import Footer from './components/Footer/Footer';
+import Inventory from './components/Invetory/Inventory';
 
 function App() {
   return (
@@ -51,6 +52,10 @@ function App() {
               <Cart></Cart>
             </Route>
 
+            <Route path="/inventory">
+              <Inventory />
+            </Route>
+
             <PrivateRoute path="/checkout">
               <LocationMap></LocationMap>
             </PrivateRoute>
@@ -76,23 +81,21 @@ function App() {
             <Route exact path="/">
               <CheckoutBtn></CheckoutBtn>
               <ChooseDelivery></ChooseDelivery>
-              <Footer></Footer>
             </Route>
 
             <Route exact path="/breakfast">
               <CheckoutBtn></CheckoutBtn>
               <ChooseDelivery></ChooseDelivery>
-              <Footer></Footer>
             </Route>
 
             <Route exact path="/dinner">
               <CheckoutBtn></CheckoutBtn>
               <ChooseDelivery></ChooseDelivery>
-              <Footer></Footer>
             </Route>
           </Switch>
 
         </Router>
+        <Footer />
       </AuthContextProvider>
     </div >
   );

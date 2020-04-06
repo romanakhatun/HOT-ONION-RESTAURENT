@@ -27,8 +27,11 @@ const Header = () => {
                             <h3>{auth.user.name}</h3>
                             <img src={auth.user.photo} alt="User Pic" />
                             <button onClick={signOutBtn} className="btn btnFull">Sign Out</button>
-                            </span> : <a href="/login" className="btn btnFull">Sign Up</a>
+                        </span> : <a href="/login" className="btn btnFull">Sign Up</a>
                     }
+                    <button className="btn btnFull inventory">
+                        <a href="/inventory">Inventory</a>
+                    </button>
                 </div>
             </div>
         </header>

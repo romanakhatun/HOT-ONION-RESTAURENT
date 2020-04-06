@@ -1,10 +1,15 @@
-import React from 'react';
-import foodsData from '../../foodsData';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Breakfast = () => {
-    const foodItems = foodsData;
-    const breakfastFoods = foodItems.filter(food => food.cat === "breakfast");
+    const [foods, setFoods] = useState([]);
+    useEffect(() => {
+        fetch('https://red-onion-restaurant-r.herokuapp.com/products').then(res => res.json()).then(data => {
+            setFoods(data);
+        });
+    }, []);
+
+    const breakfastFoods = foods.filter(food => food.cat === "breakfast");
 
     return (
         <div className="foodItems">
