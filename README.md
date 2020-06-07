@@ -1,12 +1,12 @@
 # Red Onion Rastaurent
 
-#### Red Onion Rastaurent create with React, Firebase, Node, Bootstrap, Hroku, Metarial UI, Stripe
+#### Red Onion Rastaurent create with React, Firebase, Node, Bootstrap, Hroku, Metarial-UI, Stripe
 
 ### Main Featured:
-      Signing, Signup
-      Food Add
-      Food Details
-      Shipment Information
+     Data load from live database
+     Inventory form to add Food to database
+     Cart page to manage cart, set payment info and payment
+     Integrated Stripe payment system
       
 ### Unfavorable:
     No Responsive   
