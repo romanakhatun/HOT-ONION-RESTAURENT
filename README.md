@@ -1,6 +1,6 @@
 # Red Onion Rastaurent
 
-#### Red Onion Rastaurent create with React, Firebase, Nodejs, Bootstrap, Heroku, Metarial-UI, Stripe
+#### Red Onion Rastaurent create with React, Firebase, Nodejs, Bootstrap4, Heroku, Metarial-UI, Stripe
 
 ### Main Featured:
      Data load from live database
